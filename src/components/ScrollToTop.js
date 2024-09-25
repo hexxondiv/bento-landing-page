@@ -10,7 +10,7 @@ function ScrollToTop({ children }) {
   useEffect(() => {
     setIsLoading(true);
     setFadeClass("fade-in");
-    window.scrollTo(0, 0);
+    
 
     // Simulate a delay for loading (e.g., 1 second)
     const timer = setTimeout(() => {
@@ -26,6 +26,13 @@ function ScrollToTop({ children }) {
 
     return () => clearTimeout(timer);
   }, [pathname]);
+  
+  useEffect(() => {
+    if(isLoading)return;
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 1000);
+  },[isLoading])
 
   if (isLoading) {
     return (

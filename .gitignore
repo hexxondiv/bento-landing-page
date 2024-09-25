@@ -6,3 +6,5 @@ yarn.lock
 .history
 .idea
 .vscode
+build
+.build

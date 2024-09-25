@@ -107,7 +107,7 @@ function Footer() {
             <Link to="/contact"> Contact Us </Link>
           </p>
           <p>
-            <Link to="https://bentodelivaz.com/remove-account"> Removing Account </Link>
+            <Link to="https://bentodelivaz.com/remove-account/" target="_blank"> Removing Account </Link>
           </p>
          
           </span>
