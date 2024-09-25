@@ -1,2 +1,8 @@
 .env
 node_modules/
+package-lock.json
+yarn.lock
+.history.lock
+.history
+.idea
+.vscode
