@@ -36,7 +36,7 @@ const ContactWrapper = styled.div`
     grid-gap: 10px;
     border-radius: 20px;
     ${Tablet({
-  display: 'grid', gridTemplateColumns: '36% 36% 36%', padding: '30px', borderRadius: '30px'
+  display: 'grid', gridTemplateColumns: '33% 34% 33%', padding: '30px', borderRadius: '30px'
 })}
 }
 .contact .address .one{
