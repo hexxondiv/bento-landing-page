@@ -65,10 +65,16 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" to="https://app.bentodelivaz.com" target="_blank">
+                  Web App
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/#partner">
                   Become a Partner
                 </Link>
               </li>
+              
           <li className="nav-item">
                 <Link className="nav-link" to="/help-and-support">
                   Help and Support

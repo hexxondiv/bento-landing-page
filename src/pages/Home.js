@@ -220,9 +220,15 @@ function Home() {
                   Drive, deliver and earn. Make more money when you become a{" "}
                   <span>Bento Rider</span>
                 </p>
+                <div className="">
                 <Link to="https://onelink.to/y8bhhv" className="btn">
                   Get Started
                 </Link>
+                &nbsp;
+                <Link to="https://app.bentodelivaz.com" target="_blank" className="btn">
+                  Use Web App
+                </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -235,11 +241,18 @@ function Home() {
                 <span>Bento Vendor</span> today!
               </p>
               <Link
-                to=" https://onelink.to/y67ayu"
+                to="https://onelink.to/y67ayu"
                 target="_blank"
                 className="btn ms-3"
               >
                 Get Started
+              </Link>
+               <Link
+                to="https://app.bentodelivaz.com"
+                target="_blank"
+                className="btn ms-3"
+              >
+                Shop online
               </Link>
               <div className="vendor1-container">
                 <img src="/images/food3.png" alt="vendor-food" className="img1" />
