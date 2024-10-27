@@ -21,3 +21,31 @@ a:hover {
   font-weight: 800;
   opacity: 0.5;
 }
+.loading-spinner {
+  text-align: center;
+  padding: 100px;
+  font-size: 24px;
+}
+.loading-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full-page spinner */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Make sure it covers the page */
+  transition: opacity 0.5s ease-in-out; /* Transition for fade effect */
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+  pointer-events: none; /* Prevent interaction during fade-out */
+}

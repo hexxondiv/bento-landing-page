@@ -104,10 +104,11 @@ min-height: 60vh;
 }
 .values1{
   background: url('/images/values-bg.png') no-repeat;
+  background-size:cover;
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   padding: 30px;
 }
 
@@ -168,12 +169,12 @@ function About() {
             </div>
           </div>
 
-          <Link to="https://onelink.to/y67ayu" target="_blank" className="btn">Become A parthner</Link>
+          <Link to="https://onelink.to/y67ayu" target="_blank" className="btn">Become A partner</Link>
         </div>
       </div>
 
       <div className="values" >
-        <div className="values1">
+        <div className="values1 d-flex flex-column justify-content-between align-items-center">
           <h3 className="mb-4">MISSION STATEMENT</h3>
           <p className="">Our mission is to revolutionize the way businesses conduct e-commerce and manage their logistics by delivering cutting-edge solutions that enhance efficiency, reduce costs, and exceed customer expectations. We strive to be a trusted partner in the success of our clients, empowering them to thrive in the digital marketplace.</p>
         </div>

@@ -94,16 +94,38 @@ function Footer() {
 
         </div>
         <div className="item2">
-          <h3>Quick Links</h3>
+          <h3 className="text-md-center">Quick Links</h3>
+          <div className="d-md-flex justify-content-between">
+          <span>
           <p>
-            <Link to="#about"> About US</Link>
+            <Link to="/about-us"> About US</Link>
           </p>
           <p>
-            <Link to="#partner">Partner with Us</Link>
+            <Link to="/#partner">Partner with Us</Link>
           </p>
           <p>
-            <Link to="#contact"> Contact Us </Link>
+            <Link to="/contact"> Contact Us </Link>
           </p>
+          <p>
+            <Link to="https://bentodelivaz.com/remove-account/" target="_blank"> Removing Account </Link>
+          </p>
+         
+          </span>
+          <span>
+          <p>
+            <Link to="/terms-and-conditions"> Terms & Conditions</Link>
+          </p>
+          <p>
+            <Link to="/privacy-policy"> Privacy Policy </Link>
+          </p>
+          <p>
+            <Link to="/cancellation-policy"> Cancellation Policy </Link>
+          </p>
+           <p>
+            <Link to="/refund-policy"> Refund Policy </Link>
+          </p>
+          </span>
+          </div>
 
         </div>
         <div className="item3">
@@ -135,7 +157,7 @@ function Footer() {
         </div>
       </div>
       <div className="privacy">
-        <p>All Right reversed &copy; Bentodelivaz ltd 2024{" "}</p>
+        <p>All Right reversed &copy; Bentodelivaz Ltd 2024{" "}</p>
       </div>
     </Wrapper>
   );

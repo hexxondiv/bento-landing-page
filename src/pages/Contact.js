@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Tablet, Desktop } from "../Responsive";
 import { Link } from "react-router-dom";
-import About from './../components/About';
-import ContactInfo from './../components/ContactInfo';
+import About from '../components/About';
+import ContactInfo from '../components/ContactInfo'
 
 
 const Wrapper = styled.div`
@@ -185,83 +185,20 @@ const Wrapper = styled.div`
   }
 `;
 
-function Home() {
+function Contact() {
 
   return (
     <>
       <Wrapper>
-        <section className="home" id="home">
-          <div className='hero-bg'></div>
-          <div className="hero container">
-            <h1 className="mb-3">Delivering Happiness, One Package at a Time</h1>
-            <h5 className="mt-4">Get your favorite food and parcels delivered right to your doorstep</h5>
-          </div>
-        </section>
-
-        <section className="about pt-4" id="about">
-          <About />
-        </section>
-
         <section className="partner" id="partner">
           <div className="rider">
             <div className="rider-heading px-3">
-              <h3>Grow With Bento Delivaz</h3>
+              <h3>How can we Help you?</h3>
               <p className="desc">
-                Experience the perks of flexibility, freedom, and competitive
-                earnings when you team up with Bento Delivaz.
+                Hey, let us know your problem here.
               </p>
             </div>
-            <div className="main-rider">
-              <div className="rider-container">
-                <img src="/images/rider.png" alt="rider" />
-              </div>
-              <div className="rider-content ms-3">
-                <p>
-                  Drive, deliver and earn. Make more money when you become a{" "}
-                  <span>Bento Rider</span>
-                </p>
-                <div className="">
-                <Link to="https://onelink.to/y8bhhv" className="btn">
-                  Get Started
-                </Link>
-                &nbsp;
-                <Link to="https://app.bentodelivaz.com" target="_blank" className="btn">
-                  Use Web App
-                </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="vendor">
-            <div className="vendor1">
-              <h3 className="ms-4">Become A Vendor</h3>
-              <p className="ms-4">
-                Grow your business and increase profit by Becoming a{" "}
-                <span>Bento Vendor</span> today!
-              </p>
-              <Link
-                to="https://onelink.to/y67ayu"
-                target="_blank"
-                className="btn ms-3"
-              >
-                Get Started
-              </Link>
-               <Link
-                to="https://app.bentodelivaz.com"
-                target="_blank"
-                className="btn ms-3"
-              >
-                Shop online
-              </Link>
-              <div className="vendor1-container">
-                <img src="/images/food3.png" alt="vendor-food" className="img1" />
-                <img src="/images/food4.png" alt="vendor-food" className="img2" />
-              </div>
-            </div>
-            <div className="vendor2">
-              <img src="/images/vendor.png" alt="vendor" />
-            </div>
+          
           </div>
 
         </section>
@@ -273,4 +210,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Contact;
