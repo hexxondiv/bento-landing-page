@@ -30,9 +30,9 @@ function Header() {
     <Wrapper className="sticky-top">
       <nav className="navbar navbar-expand-sm sticky-top navbar-light">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand " to="/">
             <img
-              className=""
+              className="ms-md-5"
               src="/images/brand.png"
               alt="brand"
               height="50"
@@ -58,7 +58,7 @@ function Header() {
                   Home
                 </Link>
               </li>
-              
+
               <li className="nav-item">
                 <Link className="nav-link" to="/#about">
                   About Us
@@ -74,13 +74,13 @@ function Header() {
                   Become a Partner
                 </Link>
               </li>
-              
-          <li className="nav-item">
+
+              <li className="nav-item">
                 <Link className="nav-link" to="/help-and-support">
                   Help and Support
                 </Link>
-              </li> 
-               </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>

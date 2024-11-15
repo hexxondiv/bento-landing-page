@@ -13,8 +13,11 @@ min-height: 60vh;
 .heading{
   display: grid;
   grid-template-columns: 100%;
-  ${Tablet({ gridTemplateColumns: '65% 30%', justifyContent: "space-between" })}
+  ${Tablet({ gridTemplateColumns: '45% 45%', justifyContent: "center" })}
 }
+  .head1{
+    
+  }
 .head1 h2{
     background: var(--primary-color);
     color: white;
@@ -38,6 +41,7 @@ min-height: 60vh;
 .head1 p{
   margin: 0 20px;
   font-size: 20px;
+  
 }
 .head2{
   height: 40vh;
@@ -48,15 +52,9 @@ min-height: 60vh;
   height: 100%;
   width: 100%;
   object-fit: contain;
- 
+  
 }
-.head2 .img2{
-  display: none;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  ${Tablet({ display: "block" })}
-}
+
 .key-service{
   display: flex;
   flex-direction: column-reverse;
@@ -88,6 +86,7 @@ min-height: 60vh;
 }
 .key-service .key2 .key-item p{
   font-size: 14px;
+  max-width: 450px;
 }
 .key-service .key2 .key-item p .icon{
   height: 8px;
@@ -99,8 +98,9 @@ min-height: 60vh;
   font-weight: 700;
 
 }
-.values{
-  
+.values p{
+  ${Tablet({ width: "500px", textAlign: "center" })}
+  ${Desktop({ width: "700px" })}
 }
 .values1{
   background: url('/images/values-bg.png') no-repeat;
@@ -123,12 +123,14 @@ function About() {
         <div className="head1">
           <div className="title"><h2 className="btn">About Us</h2></div>
           <h5>Overview</h5>
-          <p className="">BENTO DELIVAZ LIMITED is a dynamic and innovative
-            company that seamlessly integrates e-commerce and logistics services to provide a comprehensive solution for businesses and consumers alike. Established in 2020,our company has rapidly emerged as a key player in the rapidly evolving landscape of online commerce and supply chain management.</p>
+          <p className="">
+            BENTO DELIVAZ LIMITED, established in 2020, is a dynamic company blending e-commerce and logistics
+            to deliver comprehensive solutions for businesses and consumers. We’ve quickly become a key player
+            in the evolving world of online commerce and supply chain management.
+          </p>
         </div>
         <div className="head2">
           <img src="/images/about1.png" alt="about" className="img1" />
-
         </div>
       </div>
 

@@ -106,17 +106,21 @@ const Wrapper = styled.div`
     grid-template-columns: 100%;
     padding: 25px;
     padding-left: 0;
-    ${Tablet({ gridTemplateColumns: "60% 40%" })}
+    padding-right: 0;
+    margin: 0;
+    ${Tablet({ gridTemplateColumns: "30% 30% 30%", justifyContent: "space-between" })}
+    ${Desktop({ gridTemplateColumns: "30% 30% 30%" })}
   }
   .rider .rider-container {
-    height: 50vh;
-    ${Tablet({ height: "80vh" })}
-    ${Desktop({ height: "100vh" })}
+    height: 60vh;
+    ${Tablet({ height: "70vh" })}
+    ${Desktop({ height: "70vh" })}
   }
   .rider .rider-container img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    margin-
   }
   .rider .rider-content {
     align-self: center;
@@ -140,8 +144,8 @@ const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 100%;
     // padding: 25px;
-    padding-left: 0;
-    ${Tablet({ gridTemplateColumns: "30% 70%" })}
+    padding-left: 0; 
+    ${Tablet({ gridTemplateColumns: "45% 45%", justifyContent: 'center', alignContent: 'center' })}
   }
   .vendor h3 {
     color: var(--primary-color);
@@ -165,6 +169,15 @@ const Wrapper = styled.div`
     width: 100%;
     object-fit: contain;
   }
+    .vendor .vendor1 {
+    display: flex;
+    flex-direction: column;
+    justtify-content: center;
+    align-items: center;
+  }
+    .vendor .vendor1 p{
+      ${Desktop({ width: "400px" })}
+  }
   .vendor .vendor1-container {
     height: 40vh;
     margin-top: 20px;
@@ -174,15 +187,15 @@ const Wrapper = styled.div`
     height: 100%;
     width: 100%;
     object-fit: contain;
-    ${Tablet({ display: "none" })}
+  
   }
-  .vendor .vendor1-container .img2 {
-    display: none;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    // ${Tablet({ display: "block" })}
-  }
+  // .vendor .vendor1-container .img2 {
+  //   display: none;
+  //   height: 100%;
+  //   width: 100%;
+  //   object-fit: cover;
+  //   // ${Tablet({ display: "block" })}
+  // }
 `;
 
 function Home() {
@@ -221,14 +234,17 @@ function Home() {
                   <span>Bento Rider</span>
                 </p>
                 <div className="">
-                <Link to="https://onelink.to/y8bhhv" className="btn">
-                  Get Started
-                </Link>
-                &nbsp;
-                <Link to="https://app.bentodelivaz.com" target="_blank" className="btn">
-                  Use Web App
-                </Link>
+                  <Link to="https://onelink.to/y8bhhv" className="btn">
+                    Get Started
+                  </Link>
+                  &nbsp;
+                  <Link to="https://app.bentodelivaz.com" target="_blank" className="btn">
+                    Use Web App
+                  </Link>
                 </div>
+              </div>
+              <div className="rider-container">
+                <img src="/images/rider2.png" alt="rider" />
               </div>
             </div>
           </div>
@@ -240,32 +256,34 @@ function Home() {
                 Grow your business and increase profit by Becoming a{" "}
                 <span>Bento Vendor</span> today!
               </p>
-              <Link
+              <div><Link
                 to="https://onelink.to/y67ayu"
                 target="_blank"
                 className="btn ms-3"
               >
                 Get Started
               </Link>
-               <Link
-                to="https://app.bentodelivaz.com"
-                target="_blank"
-                className="btn ms-3"
-              >
-                Shop online
-              </Link>
+                <Link
+                  to="https://app.bentodelivaz.com"
+                  target="_blank"
+                  className="btn ms-3"
+                >
+                  Shop online
+                </Link></div>
               <div className="vendor1-container">
                 <img src="/images/food3.png" alt="vendor-food" className="img1" />
-                <img src="/images/food4.png" alt="vendor-food" className="img2" />
+
               </div>
             </div>
+
+
             <div className="vendor2">
               <img src="/images/vendor.png" alt="vendor" />
             </div>
           </div>
 
         </section>
-        <ContactInfo/>
+        <ContactInfo />
       </Wrapper>
 
     </>

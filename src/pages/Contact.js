@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Tablet, Desktop } from "../Responsive";
-import { Link } from "react-router-dom";
-import About from '../components/About';
 import ContactInfo from '../components/ContactInfo'
 
 
@@ -198,11 +196,11 @@ function Contact() {
                 Hey, let us know your problem here.
               </p>
             </div>
-          
+
           </div>
 
         </section>
-        <ContactInfo/>
+        <ContactInfo />
       </Wrapper>
 
     </>
