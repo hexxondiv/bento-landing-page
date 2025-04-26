@@ -124,7 +124,7 @@ function About() {
           <div className="title"><h2 className="btn">About Us</h2></div>
           <h5>Overview</h5>
           <p className="">
-            BENTO DELIVAZ LIMITED, established in 2020, is a dynamic company blending e-commerce and logistics
+            BENTO DELIVAZ LIMITED, established in 2019, is a dynamic company blending e-commerce and logistics
             to deliver comprehensive solutions for businesses and consumers. We’ve quickly become a key player
             in the evolving world of online commerce and supply chain management.
           </p>
