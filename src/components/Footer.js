@@ -107,6 +107,9 @@ function Footer() {
                 <Link to="/contact"> Contact Us </Link>
               </p>
               <p>
+                <Link to="/careers"> Careers </Link>
+              </p>
+              <p>
                 <Link to="https://bentodelivaz.com/remove-account/" target="_blank"> Removing Account </Link>
               </p>
 
@@ -144,13 +147,13 @@ function Footer() {
           </div>
           <div className="playstore">
             <div className="g-store me-3 store">
-              <Link to="https://onelink.to/dz6xe6" target="_blank">
+              <Link to="https://play.google.com/store/apps/details?id=com.bentodelivaz.app" target="_blank">
                 <img src="/images/g-store.png" alt="playstore" />
               </Link>
             </div>
             <div className="a-store me-3 store">
-              <Link to="#" target="_blank">
-                <img src="/images/a-store.png" alt="playstore" />
+              <Link to="https://apps.apple.com/ng/app/bento-delivaz-app/id6553946055" target="_blank">
+                <img src="/images/a-store.png" alt="applestore" />
               </Link>
             </div>
           </div>

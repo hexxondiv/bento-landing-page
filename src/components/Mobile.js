@@ -53,10 +53,10 @@ const Wrapper = styled.div`
     align-items: center;
     flex-direction: column;
     ${Tablet({
-      flexDirection: "row",
-      justifyContent: "flex-start",
-      marginTop: "40px"
-    })}
+  flexDirection: "row",
+  justifyContent: "flex-start",
+  marginTop: "40px"
+})}
   }
   .mobile-banner .mobile1 .download h5 {
     font-weight: 700;
@@ -93,7 +93,7 @@ function Mobile() {
       <div className="mobile-banner">
         <div className="bg"></div>
         <div className="mobile1">
-          <h3 className="mb-3">Experience it on Mobile</h3>
+          <h3 className="mb-3">Dwonload the Mobile App</h3>
           <p className="mb-2 ">
             Feeling hungry ? Too exhausted to prepare a meal ?
           </p>
@@ -102,27 +102,27 @@ function Mobile() {
             doorstep within minutes, Discover Convenience!{" "}
           </p>
           <div className="download">
-            <h5>Download and order now!</h5>
+            <h5>Download Now and Order!</h5>
             <div className="playstore">
               <div className="g-store me-3 store">
-                <Link to="https://onelink.to/dz6xe6" target="_blank">
+                <Link to="https://play.google.com/store/apps/details?id=com.bentodelivaz.app" target="_blank">
                   <img src="/images/g-store.png" alt="playstore" />
                 </Link>
               </div>
               <div className="a-store me-3 store">
-                <Link to="https://onelink.to/dz6xe6" target="_blank">
-                  <img src="/images/a-store.png" alt="playstore" />
+                <Link to="https://apps.apple.com/ng/app/bento-delivaz-app/id6553946055" target="_blank">
+                  <img src="/images/a-store.png" alt="applestore" />
                 </Link>
               </div>
             </div>
           </div>
         </div>
         <div className="mobile2">
-          <img src="/images/mobile.png" alt="mobile" />
+          <img src="/images/mobile1.png" alt="mobile" />
         </div>
       </div>
 
-      
+
     </Wrapper>
   )
 }

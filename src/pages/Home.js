@@ -12,7 +12,8 @@ const Wrapper = styled.div`
 
   .home{
     height: 60vh;
-    background-image: url("/images/hero.png");
+    background-image: url("/images/hero.jpeg");
+    background-position: center;
     background-size: cover;
     position: relative;
     z-index: -2;
@@ -34,6 +35,12 @@ const Wrapper = styled.div`
 }
 .home h1{
     font-weight: 700;
+    background: linear-gradient(89.63deg, #FFFFFF 47.52%, #BA0018 98.84%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+    
 }
   .playstore {
     display: flex;
@@ -206,8 +213,8 @@ function Home() {
         <section className="home" id="home">
           <div className='hero-bg'></div>
           <div className="hero container">
-            <h1 className="mb-3">Delivering Happiness, One Package at a Time</h1>
-            <h5 className="mt-4">Get your favorite food and parcels delivered right to your doorstep</h5>
+            <h1 className="mb-5">Delivering Happiness, One Package at a Time</h1>
+            <h5 className="mt-4">Get your favorite Food and Parcels delivered right to your doorstep</h5>
           </div>
         </section>
 
@@ -234,7 +241,7 @@ function Home() {
                   <span>Bento Rider</span>
                 </p>
                 <div className="">
-                  <Link to="https://onelink.to/y8bhhv" className="btn">
+                  <Link target="_blank" to="/bentodelivaz.page.link/rider/download" className="btn">
                     Get Started
                   </Link>
                   &nbsp;
@@ -257,7 +264,7 @@ function Home() {
                 <span>Bento Vendor</span> today!
               </p>
               <div><Link
-                to="https://onelink.to/y67ayu"
+                to="/bentodelivaz.page.link/vendor/download"
                 target="_blank"
                 className="btn ms-3"
               >
