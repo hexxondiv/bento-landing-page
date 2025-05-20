@@ -38,9 +38,9 @@ function App() {
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/careers" element={<Careers />} />
-          <Route path="/bentodelivaz.page.link/download" element={<UserDownload />} />
-          <Route path="/bentodelivaz.page.link/vendor/download" element={<VendorDownload />} />
-          <Route path="/bentodelivaz.page.link/rider/download" element={<RiderDownload />} />
+          <Route path="/download" element={<UserDownload />} />
+          <Route path="/vendor/download" element={<VendorDownload />} />
+          <Route path="/rider/download" element={<RiderDownload />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </ScrollToTop>
