@@ -241,7 +241,7 @@ function Home() {
                   <span>Bento Rider</span>
                 </p>
                 <div className="">
-                  <Link target="_blank" to="/bentodelivaz.page.link/rider/download" className="btn">
+                  <Link target="_blank" to="/rider/download" className="btn">
                     Get Started
                   </Link>
                   &nbsp;
@@ -264,7 +264,7 @@ function Home() {
                 <span>Bento Vendor</span> today!
               </p>
               <div><Link
-                to="/bentodelivaz.page.link/vendor/download"
+                to="/vendor/download"
                 target="_blank"
                 className="btn ms-3"
               >

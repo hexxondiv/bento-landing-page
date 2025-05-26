@@ -16,7 +16,7 @@ const Wrapper = styled.div`
         text-align: center;
         padding: 50px;
     }
-  .d-btn{
+.d-btn{
     display: inline-block;
     margin:  10px;
     padding: 12px 24px;

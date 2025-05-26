@@ -93,7 +93,7 @@ function Mobile() {
       <div className="mobile-banner">
         <div className="bg"></div>
         <div className="mobile1">
-          <h3 className="mb-3">Dwonload the Mobile App</h3>
+          <h3 className="mb-3">Download the Mobile App</h3>
           <p className="mb-2 ">
             Feeling hungry ? Too exhausted to prepare a meal ?
           </p>
