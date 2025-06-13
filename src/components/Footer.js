@@ -82,12 +82,13 @@ function Footer() {
   return (
     <Wrapper>
       <div className="img-container">
-        <img src="/images/brand2.png" alt="brand" className="footer-logo" />
+        <Link to="/">
+          <img src="/images/brand2.png" alt="brand" className="footer-logo" /></Link>
       </div>
       <div className="items px-4">
         <div className="item1">
           <h3>Company</h3>
-          <p>Bentodelivaz - e-commerce and logistics</p>
+          <p>Bentodelivaz - Food & Courier Service</p>
           <p>
             Motto - Discover a new level of efficiency
           </p>
@@ -104,14 +105,15 @@ function Footer() {
                 <Link to="/#partner">Partner with Us</Link>
               </p>
               <p>
-                <Link to="/contact"> Contact Us </Link>
+                <Link to="/contact-us"> Contact Us </Link>
               </p>
               <p>
                 <Link to="/careers"> Careers </Link>
               </p>
               <p>
-                <Link to="https://bentodelivaz.com/remove-account/" target="_blank"> Removing Account </Link>
+                <Link to="/faqs"> FAQs </Link>
               </p>
+
 
             </span>
             <span>

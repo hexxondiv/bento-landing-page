@@ -8,6 +8,7 @@ const Wrapper = styled.div`
 
   .navbar{
     background: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.20);
   }
 
   .first-nav {
@@ -60,7 +61,7 @@ function Header() {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/#about">
+                <Link className="nav-link" to="/about-us">
                   About Us
                 </Link>
               </li>
@@ -76,8 +77,8 @@ function Header() {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/help-and-support">
-                  Help and Support
+                <Link className="nav-link" to="https://blog.bentodelivaz.com" target="_blank">
+                  Blog
                 </Link>
               </li>
             </ul>

@@ -19,6 +19,7 @@ import Careers from "./pages/Careers";
 import UserDownload from "./pages/downloadLinks/UserDownload";
 import VendorDownload from "./pages/downloadLinks/VendorDownload";
 import RiderDownload from "./pages/downloadLinks/RiderDownload";
+import FaqFage from "./pages/FaqFage";
 
 
 function App() {
@@ -30,14 +31,15 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/help-and-support" element={<Contact />} />
+          <Route path="/contact-us" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TaC />} />
           <Route path="/cancellation-policy" element={<CancellationPolicy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/faqs" element={<FaqFage />} />
+
           <Route path="/download" element={<UserDownload />} />
           <Route path="/vendor/download" element={<VendorDownload />} />
           <Route path="/rider/download" element={<RiderDownload />} />

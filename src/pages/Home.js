@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Tablet, Desktop } from "../Responsive";
 import { Link } from "react-router-dom";
-import About from './../components/About';
 import ContactInfo from './../components/ContactInfo';
+import Mobile from './../components/Mobile';
 
 
 const Wrapper = styled.div`
@@ -11,37 +11,177 @@ const Wrapper = styled.div`
   font-family: "Poppins", sans-serif;
 
   .home{
-    height: 60vh;
+    min-height: 50vh;  
+}
+  .home .hero{
+      padding: 10px 30px;
+      display: grid;
+      grid-template-column: 100%;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 40px;
+      ${Tablet({ gridTemplateColumns: "50% 40%" })}
+      ${Tablet({ gridTemplateColumns: "45% 30%" })}
+    }
+  .home .hero .intro{
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+    }
+  .home .hero .intro .order-now{  
+     ${Tablet({ alignSelf: "start" })} 
+  }
+    .home .hero .intro h1{
+      font-weight: 700;
+      font-size: 34px; 
+      ${Tablet({ fontSize: "45px" })}
+    }
+    .home .hero .intro h1 span{
+      color: var(--primary-color);
+    }
+    .home .hero .intro a{
+      padding: 10px 20px;
+      font-weight: 600;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      background:  var(--primary-color);
+      border-radius: 30px;
+      ${Tablet({ fontSize: "25px" })}
+    }
+    .home .hero .app-download{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+      
+    }
+    .home .hero .app-download .img-container{
+     height: 30vh;
+     margin-top: 20px;
+     margin-bottom: 20px;
+    ${Tablet({ height: "40vh" })}
+    ${Tablet({ height: "50vh" })}
+  }
+  .home .hero .app-download .img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .home .hero .app-download .download-icons{
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .home .hero .app-download .download-icons  .playstore {
+    display: flex;
+  }
+  .home .hero .app-download .download-icons .store-home {
+    width: 80px;
+    height: 25px;
+    ${Tablet({ width: "150px", height: "40px" })}
+  }
+  .home .hero .app-download .download-icons .store-home img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+    .services{
+      
+  }
+  .services h3{
+     color: var(--primary-color);
+     font-weight: 700;
+     text-align: center;
+     margin:  30px 10px;
+  }
+  .services .products{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+    justify-content: center;
+    padding: 20px;
+    ${Tablet({ flexDirection: "row", alignItems: "center", justifyContent: "space-between" })}
+  }
+.services .products .food{
+    height: 30vh;
+    background-image: url("/images/hero2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    // z-index: -2;
+    display: flex;
+    flex-direction; column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+     ${Tablet({ height: "40vh", margin: "20px 40px" })}
+}
+ .services .products .parcel{
+    height: 30vh;
     background-image: url("/images/hero.jpeg");
     background-position: center;
     background-size: cover;
     position: relative;
-    z-index: -2;
+    // z-index: -2;
     display: flex;
+    flex-direction; column;
     justify-content: center;
     align-items: center;
     color: white;
-     ${Tablet({ height: "80vh" })}
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+     ${Tablet({ height: "40vh", margin: "20px 40px" })}
 }
-.home .hero-bg{
+    
+
+.services .products .food .product-bg, .services .products .parcel .product-bg{
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: -1;
+    z-index: 1;
+    border-radius: 20px;
 }
-.home .hero{
-    text-align: center;
+.services .products .food .product, .services .products .parcel .product{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+    z-index: 2;
 }
-.home h1{
-    font-weight: 700;
-    background: linear-gradient(89.63deg, #FFFFFF 47.52%, #BA0018 98.84%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-    
+.services .products .food .product h4, 
+.services .products .parcel .product h4{
+   font-size: 40px;
+   font-weight: 700;
+   margin-bottom: 30px; 
+   text-align: center;
+   
 }
+.services .products .food .product .product-store, 
+.services .products .parcel .product .product-store{
+   width: 60px;
+   height: 20px;
+   z-index: 1;
+   ${Tablet({ width: "120px", height: "30px" })}
+}
+.services .products .food .product .product-store img, 
+.services .products .parcel .product .product-store img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+
   .playstore {
     display: flex;
   }
@@ -127,11 +267,14 @@ text-fill-color: transparent;
     height: 100%;
     width: 100%;
     object-fit: contain;
-    margin-
+   
   }
   .rider .rider-content {
-    align-self: center;
-    ${Tablet({ alignSelf: "center" })}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
   }
   .rider .rider-content p {
     ${Tablet({ fontSize: "18px" })}
@@ -168,8 +311,10 @@ text-fill-color: transparent;
     font-weight: 700;
   }
   .vendor .vendor2 {
-    height: 60vh;
-    ${Tablet({ height: "80vh" })}
+    padding: 10px;
+    margin-top: 20px;
+    height: 50vh;
+    ${Tablet({ height: "70vh" })}
   }
   .vendor .vendor2 img {
     height: 100%;
@@ -182,18 +327,19 @@ text-fill-color: transparent;
     justtify-content: center;
     align-items: center;
   }
-    .vendor .vendor1 p{
+   .vendor .vendor1 p{
       ${Desktop({ width: "400px" })}
   }
   .vendor .vendor1-container {
     height: 40vh;
     margin-top: 20px;
-    ${Tablet({ height: "60vh" })}
+    ${Tablet({ height: "50vh" })}
   }
   .vendor .vendor1-container .img1 {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    border-radius: 50px;
   
   }
   // .vendor .vendor1-container .img2 {
@@ -211,15 +357,84 @@ function Home() {
     <>
       <Wrapper>
         <section className="home" id="home">
-          <div className='hero-bg'></div>
-          <div className="hero container">
-            <h1 className="mb-5">Delivering Happiness, One Package at a Time</h1>
-            <h5 className="mt-4">Get your favorite Food and Parcels delivered right to your doorstep</h5>
+          <div className="hero">
+            <div className="intro">
+              <h1>Safe and Instant delivery for your <span>Food</span> and <span>Parcels </span>
+                in Abuja
+              </h1>
+              <div className="order-now mt-4 mt-md-5">
+                <Link to="https://app.bentodelivaz.com" target="_blank">Order Now</Link>
+              </div>
+            </div>
+
+            <div className="app-download">
+              <div className="img-container">
+                <img src="/images/hero.png" alt="hero" />
+              </div>
+              <div className="playstore download-icons">
+                <div className="g-store me-3 store-home">
+                  <Link to="https://play.google.com/store/apps/details?id=com.bentodelivaz.app" target="_blank">
+                    <img src="/images/g-store3.png" alt="playstore" />
+                  </Link>
+                </div>
+                <div className="a-store me-3 store-home">
+                  <Link to="https://apps.apple.com/ng/app/bento-delivaz-app/id6553946055" target="_blank">
+                    <img src="/images/a-store3.png" alt="applestore" />
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section className="about pt-4" id="about">
-          <About />
+        <section className="services container my-4">
+          <div className="products">
+            <div className="food">
+              <div className='product-bg'></div>
+              <div className="product">
+                <h4>Food Delvery</h4>
+                <div className="playstore">
+                  <div className="g-store me-3 product-store">
+                    <Link to="https://play.google.com/store/apps/details?id=com.bentodelivaz.app" target="_blank">
+                      <img src="/images/g-store2.png" alt="playstore" />
+                    </Link>
+                  </div>
+                  <div className="a-store me-3 product-store">
+                    <Link to="https://apps.apple.com/ng/app/bento-delivaz-app/id6553946055" target="_blank">
+                      <img src="/images/a-store2.png" alt="applestore" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="parcel">
+              <div className='product-bg'></div>
+              <div className="product">
+                <h4>Parcel Delvery</h4>
+                <div className="playstore">
+                  <div className="g-store me-3 product-store">
+                    <Link to="https://play.google.com/store/apps/details?id=com.bentodelivaz.app" target="_blank">
+                      <img src="/images/g-store2.png" alt="playstore" />
+                    </Link>
+                  </div>
+                  <div className="a-store me-3 product-store">
+                    <Link to="https://apps.apple.com/ng/app/bento-delivaz-app/id6553946055" target="_blank">
+                      <img src="/images/a-store2.png" alt="applestore" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <h3> Food delivery in Abuja</h3>
+          <p>
+            Whether you’re craving breakfast, lunch, dinner, or a late-night snack, Bento Delivaz makes it easy to order food online
+            in Abuja and have it delivered fast to your doorstep. Discover new and nearby places to eat, explore a
+            wide range of cuisines, and track your food delivery in real time. With Bento Delivaz, getting great
+            meals and parcels delivered across Abuja has never been easier.
+          </p>
         </section>
 
         <section className="partner" id="partner">
@@ -235,7 +450,8 @@ function Home() {
               <div className="rider-container">
                 <img src="/images/rider.png" alt="rider" />
               </div>
-              <div className="rider-content ms-3">
+              <div className="rider-content mx-2">
+                <h3 className="">Become A Bento Rider</h3>
                 <p>
                   Drive, deliver and earn. Make more money when you become a{" "}
                   <span>Bento Rider</span>
@@ -278,19 +494,20 @@ function Home() {
                   Shop online
                 </Link></div>
               <div className="vendor1-container">
-                <img src="/images/food3.png" alt="vendor-food" className="img1" />
+                <img src="/images/food-item.png" alt="vendor-food" className="img1" />
 
               </div>
             </div>
 
 
             <div className="vendor2">
-              <img src="/images/vendor.png" alt="vendor" />
+              <img src="/images/vendor3.png" alt="vendor" />
             </div>
           </div>
 
         </section>
         <ContactInfo />
+        <Mobile />
       </Wrapper>
 
     </>
