@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home";
 // import Contact from "./pages/Contact";
@@ -21,12 +21,22 @@ import VendorDownload from "./pages/downloadLinks/VendorDownload";
 import RiderDownload from "./pages/downloadLinks/RiderDownload";
 import FaqFage from "./pages/FaqFage";
 
-
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'pageview',
+      page_path: location.pathname + location.search,
+
+    });
+  }, [location.pathname, location.search]);
 
   return (
     <Router>
       <Header />
+
       <ScrollToTop >  {/* Add ScrollToTop to listen for route changes */}
 
         <Routes>
