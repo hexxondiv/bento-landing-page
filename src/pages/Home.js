@@ -392,7 +392,7 @@ function Home() {
             <div className="food">
               <div className='product-bg'></div>
               <div className="product">
-                <h4>Food Delvery</h4>
+                <h4>Food Delivery</h4>
                 <div className="playstore">
                   <div className="g-store me-3 product-store">
                     <Link to="https://play.google.com/store/apps/details?id=com.bentodelivaz.app" target="_blank">
@@ -411,7 +411,7 @@ function Home() {
             <div className="parcel">
               <div className='product-bg'></div>
               <div className="product">
-                <h4>Parcel Delvery</h4>
+                <h4>Parcel Delivery</h4>
                 <div className="playstore">
                   <div className="g-store me-3 product-store">
                     <Link to="https://play.google.com/store/apps/details?id=com.bentodelivaz.app" target="_blank">
