@@ -20,15 +20,16 @@ import UserDownload from "./pages/downloadLinks/UserDownload";
 import VendorDownload from "./pages/downloadLinks/VendorDownload";
 import RiderDownload from "./pages/downloadLinks/RiderDownload";
 import FaqFage from "./pages/FaqFage";
-
+import RouteChangeTracker from "./components/RouteChangeTracker";
 
 function App() {
 
   return (
     <Router>
       <Header />
-      <ScrollToTop >  {/* Add ScrollToTop to listen for route changes */}
 
+      <ScrollToTop >  {/* Add ScrollToTop to listen for route changes */}
+        <RouteChangeTracker />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact-us" element={<Contact />} />
