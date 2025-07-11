@@ -122,7 +122,7 @@ function ContactInfo() {
               <h4>Email Address</h4>
               <p>info@bentodelivaz.com</p>
               <p>support@bentodelivaz.com</p>
-              <p>bentodelivazltd@gmail.com</p>
+              <p>hello@bentodelivaz.com</p>
             </div>
           </div>
 
