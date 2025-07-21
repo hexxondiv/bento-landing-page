@@ -162,7 +162,7 @@ function Footer() {
         </div>
       </div>
       <div className="privacy">
-        <p>All Right reversed &copy; Bentodelivaz Ltd {new Date().getFullYear()}</p>
+        <p>All Right reserved &copy; Bentodelivaz Ltd {new Date().getFullYear()}</p>
       </div>
     </Wrapper>
   );
