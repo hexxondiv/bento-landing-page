@@ -180,8 +180,6 @@ const Wrapper = styled.div`
     object-fit: contain;
     border-radius: 5px;
 }
-
-
   .playstore {
     display: flex;
   }
